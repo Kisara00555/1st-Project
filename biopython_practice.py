@@ -25,5 +25,6 @@ else:
         # Translate DNA to protein
         protein_seq = seq.translate()
         print("\nProtein sequence (first 50 amino acids):", protein_seq[:50])
+        # Find percentage of G + C in the sequence
         gc_content = 100 * (seq.count("G") + seq.count("C")) / len(seq)
         print("gc_content: {:.2f}%".format(gc_content))
